@@ -4,7 +4,8 @@
   "description": "wdio-mocha-js",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint src/* --fix 2>&1 | tee eslint.log"
+    "lint": "npx eslint src/* --fix 2>&1 | tee eslint.log",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
