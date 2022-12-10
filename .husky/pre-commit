@@ -2,9 +2,3 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run lint
-
-if [$? = 0]; then
-  echo "Lint is successful and no errors found"
-else
-  echo "Lint is unsuccessful and errors found"
-fi
