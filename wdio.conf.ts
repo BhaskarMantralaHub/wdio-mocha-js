@@ -1,4 +1,8 @@
 import type { Options } from '@wdio/types'
+import {specs} from "./src/constants/specs";
+import {loadConfig} from "./src/config/config-helper";
+
+loadConfig()
 
 export const config: Options.Testrunner = {
     //
@@ -30,9 +34,7 @@ export const config: Options.Testrunner = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        './src/test/specs/**/*.ts'
-    ],
+    specs: specs,
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -80,7 +82,7 @@ export const config: Options.Testrunner = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
