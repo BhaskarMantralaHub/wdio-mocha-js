@@ -3,13 +3,16 @@ import * as fs from "fs";
 import * as path from "path";
 
 export function loadConfig() {
+    console.log('Reading Properties file');
     dotenv.config();
     const exampleProps = getEnvExampleProps();
+    let props = new Map();
     for (let prop of exampleProps) {
         if (!process.env[prop]) {
             throw new Error(`${prop} env property cannot be empty`);
-        }
+        } else props.set(prop, process.env[prop]);
     }
+    console.debug(Object.fromEntries(props));
 }
 
 function getEnvExampleProps() {

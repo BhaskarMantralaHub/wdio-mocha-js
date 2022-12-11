@@ -11,7 +11,8 @@
     "wdio-chromedriver-service": "^8.0.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "wdio": "wdio run ./wdio.conf.ts",
+    "load-config": "ts-node -e \"import { loadConfig } from './src/config/config-helper'; loadConfig()\""
   },
   "dependencies": {
     "dotenv": "^16.0.3",
