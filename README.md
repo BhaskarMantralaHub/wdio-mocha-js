@@ -4,6 +4,8 @@
 
 https://webdriver.io/docs/gettingstarted/
 
+https://www.youtube.com/playlist?list=PLPO0LFyCaSo3oedws079pCNtppXAZdjv6
+
 ## How to run WDIO tests?
 
 ```npm 
