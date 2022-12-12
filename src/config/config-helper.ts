@@ -4,7 +4,8 @@ import * as path from "path";
 
 /**
  * Loads configuration from .env file when wdio.conf file loads and validates required properties from .env.example file
- *
+ * @file .env.example - Has all required properties to support the project
+ * @file .env - local file - should have all property values set as per .env.example
  * @returns void
  */
 export function loadConfig() {

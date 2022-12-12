@@ -20,7 +20,7 @@ wdio-mocha-js-documentation
 
 #### Defined in
 
-[config-helper.ts:28](https://github.com/BhaskarMantralaHub/wdio-mocha-js/blob/bb57f5c/src/config/config-helper.ts#L28)
+[config-helper.ts:30](https://github.com/BhaskarMantralaHub/wdio-mocha-js/blob/a932e05/src/config/config-helper.ts#L30)
 
 ## Functions
 
@@ -28,7 +28,15 @@ wdio-mocha-js-documentation
 
 ▸ **loadConfig**(): `void`
 
-Loads configuration from .env file and validates required properties from .env.example file
+Loads configuration from .env file when wdio.conf file loads and validates required properties from .env.example file
+
+**`File`**
+
+.env.example - Has all required properties to support the project
+
+**`File`**
+
+.env - local file - should have all property values set as per .env.example
 
 #### Returns
 
@@ -38,4 +46,4 @@ void
 
 #### Defined in
 
-[config-helper.ts:9](https://github.com/BhaskarMantralaHub/wdio-mocha-js/blob/bb57f5c/src/config/config-helper.ts#L9)
+[config-helper.ts:11](https://github.com/BhaskarMantralaHub/wdio-mocha-js/blob/a932e05/src/config/config-helper.ts#L11)
