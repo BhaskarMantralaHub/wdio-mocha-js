@@ -112,8 +112,9 @@
     /* Skip type checking all .d.ts files. */
   },
   "typedocOptions": {
-    "entryPoints": ["src/typedoc/*.ts"],
+    "entryPoints": ["src/config/*.ts"],
     "out": "docs",
+    "githubPages": false,
     "name": "wdio-mocha-js-documentation",
     "excludeNotDocumented": false,
     "readme": "none", //to disable readme,

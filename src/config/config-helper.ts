@@ -2,6 +2,11 @@ import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as path from "path";
 
+/**
+ * Loads configuration from .env file when wdio.conf file loads and validates required properties from .env.example file
+ *
+ * @returns void
+ */
 export function loadConfig() {
     console.log('Reading Properties file');
     dotenv.config();
