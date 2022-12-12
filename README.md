@@ -41,6 +41,8 @@ npm install npm-check-updates --save-dev
 
 #installs latest chromedriver and updates package.json file
 #ncu - stands for npm check updates
+#Add this to scripts on package.json
+#ncu -f chromedriver -u & wdio run ./wdio.conf.ts
 ncu -f chromedriver -u
 ```
 
