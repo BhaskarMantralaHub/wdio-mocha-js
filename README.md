@@ -33,4 +33,16 @@ PROP1=VALUE1 wdio run ./wdio.conf.ts
 
 dotenv.config() will override the properties sent from CLI
 
+## Auto update chromedriver based on local Chrome browser
+
+```shell
+#Package to install latest packages from package.json
+npm install npm-check-updates --save-dev
+
+#installs latest chromedriver and updates package.json file
+#ncu - stands for npm check updates
+ncu -f chromedriver -u
+```
+
+
 

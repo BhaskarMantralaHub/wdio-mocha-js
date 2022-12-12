@@ -6,6 +6,7 @@
     "@wdio/mocha-framework": "^8.0.9",
     "@wdio/spec-reporter": "^8.0.8",
     "chromedriver": "^108.0.0",
+    "npm-check-updates": "^16.5.6",
     "ts-node": "^10.9.1",
     "typedoc": "^0.23.22",
     "typedoc-plugin-markdown": "^3.14.0",
@@ -13,7 +14,7 @@
     "wdio-chromedriver-service": "^8.0.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts",
+    "wdio": "ncu -f chromedriver -u & wdio run ./wdio.conf.ts",
     "load-config": "ts-node -e \"import { loadConfig } from './src/config/config-helper'; loadConfig()\"",
     "documentation": "npx typedoc"
   },
