@@ -46,5 +46,11 @@ npm install npm-check-updates --save-dev
 ncu -f chromedriver -u
 ```
 
+## WebDriverIO vs Selenium
+
+https://hackernoon.com/webdriverio-vs-selenium-who-will-win-rxz34gk
+
+
+
 
 
