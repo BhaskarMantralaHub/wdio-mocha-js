@@ -37,7 +37,9 @@
        "node",
        "@wdio/globals/types",
        "expect-webdriverio",
-       "@wdio/mocha-framework"
+       "@wdio/mocha-framework",
+       "@wdio/sync",
+       "./wdio"
      ],                                      /* Specify type package names to be included without being referenced in a source file. */
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     // "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */
@@ -111,6 +113,9 @@
     "skipLibCheck": true
     /* Skip type checking all .d.ts files. */
   },
+  "include": [
+    "./src/test/**/*.ts"
+  ],
   "typedocOptions": {
     "entryPoints": ["src/config/*.ts"],
     "out": "docs",

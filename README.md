@@ -50,6 +50,17 @@ ncu -f chromedriver -u
 
 https://hackernoon.com/webdriverio-vs-selenium-who-will-win-rxz34gk
 
+## timeouts
+
+| Timeout type         | property          | timeout ms (can be configured) |
+|----------------------|-------------------|--------------------------------|
+| WDIO waitFor timeout | waitforTimeout    | 10000                          |
+| mocha timeout        | mochaOpts.timeout | 6000                           |
+
+## custom browser commands
+
+
+
 
 
 
