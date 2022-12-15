@@ -28,6 +28,8 @@ class LoginPage extends Page {
     public async login (username: string, password: string) {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
+        // @ts-ignore
+        // await browser.waitThenClick(this.btnSubmit)
         await this.btnSubmit.click();
     }
 

@@ -1,10 +1,14 @@
 {
   "name": "wdio-macha-js",
   "devDependencies": {
+    "@wdio/allure-reporter": "^8.0.13",
     "@wdio/cli": "^8.0.11",
+    "@wdio/concise-reporter": "^8.0.13",
+    "@wdio/dot-reporter": "^8.0.13",
     "@wdio/local-runner": "^8.0.11",
     "@wdio/mocha-framework": "^8.0.11",
     "@wdio/spec-reporter": "^8.0.11",
+    "allure-commandline": "^2.20.1",
     "chromedriver": "^108.0.0",
     "geckodriver": "^3.2.0",
     "kill-port": "^2.0.1",
@@ -23,6 +27,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "dotenv-expand": "^9.0.0"
+    "dotenv-expand": "^9.0.0",
+    "wdio-mochawesome-reporter": "^2.0.1"
   }
 }
