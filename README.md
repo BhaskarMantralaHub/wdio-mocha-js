@@ -61,6 +61,16 @@ https://hackernoon.com/webdriverio-vs-selenium-who-will-win-rxz34gk
 
 
 
+## Allure report sharing
+
+https://app.netlify.com/teams/bhaskarmantralahub/overview
+
+
+https://allure-report-wdio-mocha.netlify.app/
+
+
+
+
 
 
 
