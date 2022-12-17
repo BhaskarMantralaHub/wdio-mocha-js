@@ -1,11 +1,13 @@
 import type {Options} from '@wdio/types';
-import {specs} from "./src/constants/specs";
-import {loadConfig} from "./src/config/config-helper";
-import {COMMANDS} from "./src/core/browser-custom-commands";
+import {specs} from "./constants/specs";
+import {loadConfig} from "./config/config-helper";
+import {COMMANDS} from "./core/browser-custom-commands";
 const allure = require('allure-commandline');
 
 
 loadConfig();
+
+export type IElement = WebdriverIO.Element;
 
 export const config: Options.Testrunner = {
     //

@@ -20,7 +20,7 @@
     "wdio-geckodriver-service": "^4.0.0"
   },
   "scripts": {
-    "wdio": "ncu -f chromedriver -u & wdio run ./wdio.conf.ts",
+    "wdio": "ncu -f chromedriver -u & wdio run src/wdio.conf.ts",
     "load-config": "ts-node -e \"import { loadConfig } from './src/config/config-helper'; loadConfig()\"",
     "documentation": "npx typedoc"
   },
