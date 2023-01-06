@@ -2,6 +2,8 @@ import type {Options} from '@wdio/types';
 import {specs} from "./constants/specs";
 import {loadConfig} from "./config/config-helper";
 import {COMMANDS} from "./core/browser-custom-commands";
+import {WdioReporter} from "./reporter/wdio-reporter";
+import {ReporterClass} from "@wdio/types/build/Reporters";
 const allure = require('allure-commandline');
 
 
@@ -149,7 +151,7 @@ export const config: Options.Testrunner = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec', ['allure', {
+    reporters: [[WdioReporter as ReporterClass, {}], ['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: true,
